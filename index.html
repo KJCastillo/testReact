@@ -24,6 +24,24 @@
       <p>footer</p>
     </footer>
 
-    <script type="text/babel"></script>
+    <script type="text/babel">
+      const Banner = () => {
+        const title = 'welcome to my site!'
+        const subtitle = 'learning react test site!'
+
+        const handleClick = () => {
+            console.log('clicked')
+        }
+
+        return (
+          <div>
+            <h2>{title}</h2>
+            <p>{subtitle}</p>
+            <button onClick={handleClick}>click me</button>
+          </div>
+        );
+      };
+      ReactDOM.render(<Banner />, document.getElementById('banner'))
+    </script>
   </body>
 </html>
